@@ -1,0 +1,22 @@
+touch .gitignore
+git config --global user.name Austin
+git config --global user.email "nita.austinpaul@gmail.com"
+git init
+git add .
+git commit -m "Initial commit"
+git status
+git remote add origin git@github.com:Austinatg/DanceWebsite.git
+git push origin master  # if doesnt establish then:
+	ssh-keygen -t ed25519 -C "nita.austinpaul@gmail.com"
+	cat /c/Users/Admin/.ssh/id_ed25519.pub  #public key folder is saved here check from previous one
+	copy the code and paste it to add ssh in your github acc
+
+git push origin master
+git status
+
+if you updated
+git status # will give untracked file
+git add .
+git commit -m "Added Cheatsheet"
+git push origin master
+
