@@ -1,0 +1,35 @@
+//- layout.pug
+//- html
+//-   head
+//-     title My Site - #{title}
+//-     block scripts
+//-       script(src='/jquery.js')
+//-   body
+//-     block content
+//-     block foot
+//-       #footer
+//-         p some footer content
+
+//- // the block where is used is known as variable i.e it will keep on changing while others like title footer is constant
+
+html
+  head
+    title ATG Dance Academy
+    block scripts
+    block style
+  Body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    
+    block content
+    
+    footer#footer
+        | Copyright©2019 ATGDance Academy | All Rights Reserved
